@@ -4,6 +4,7 @@ import { ArrowUpDown, Funnel, Star } from "lucide-react";
 import { Theme } from "../../Context/ThemeContext/ThemeContext";
 import { useNavigate } from "react-router";
 import LoadingPage from "../Loading/Loadingpage";
+import Navbar from "../../Components/Navbar/Navbar";
 
 const BookList = () => {
   const [Books, setBooks] = useState([]);
@@ -111,7 +112,9 @@ const BookList = () => {
   if (loading) return <LoadingPage />;
 
   return (
-    <div
+    <>
+    <Navbar/>
+   <div
       className={`p-4 mt-6 w-full transition-colors duration-300 ${
         SwitchTheme === "dark"
           ? "bg-gray-900 text-gray-100"
@@ -321,7 +324,8 @@ const BookList = () => {
           </button>
         </div>
       )}
-    </div>
+    </div> 
+    </>
   );
 };
 
