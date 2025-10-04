@@ -71,7 +71,9 @@ Open http://localhost:5173 in your browser.
 🔹 API Documentation
 Auth APIs
 Endpoint	Method	Description
+
 /auth/register	POST	Register a new user
+
 /auth/login	POST	Login user and return JWT
 
 User APIs
