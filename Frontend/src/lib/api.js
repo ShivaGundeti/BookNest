@@ -1,7 +1,8 @@
 import axios from "axios";
 import { Review } from "../../../Backend/model/model";
 
-export const API_BASE_URL = "http://localhost:6801";
+// export const API_BASE_URL = "http://localhost:6801";
+export const API_BASE_URL = "https://booknest-azel.onrender.com";
 
 const getAuthToken = () => {
   try {
