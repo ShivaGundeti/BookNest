@@ -19,7 +19,7 @@ const Navbar = () => {
   useEffect(() => {
     // derive active nav item from current pathname so highlight is always correct
     const path = location.pathname.toLowerCase();
-    if (path === "/" || path.startsWith("/home")) setSelectNavItem("Home");
+    if (path === "/" || path.startsWith("/")) setSelectNavItem("Home");
     else if (path.startsWith("/mybooks")) setSelectNavItem("MyBooks");
     
     else setSelectNavItem("Home");
@@ -37,13 +37,13 @@ const Navbar = () => {
   };
 
   const itemToPath = {
-    Home: "/home",
+    Home: "/",
     MyBooks: "/Mybooks",
    
   };
 
   const handleNavItemClick = (item) => {
-    const path = itemToPath[item] || "/home";
+    const path = itemToPath[item] || "/";
     // update visual state immediately for snappy feedback
     setSelectNavItem(item);
     setNavOpen(false);

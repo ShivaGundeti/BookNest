@@ -56,7 +56,7 @@ const Login = () => {
         authUtils.setAuth(response.data.token, response.data.userData);
 
         // ✅ Redirect to dashboard
-        navigate("/home");
+        navigate("/");
       } catch (err) {
         console.error("Login failed:", err);
         setErrors({ Email: "Invalid credentials", Password: " " });
