@@ -76,26 +76,36 @@ Endpoint	Method	Description
 
 /auth/login	POST	Login user and return JWT
 
-User APIs
-Endpoint	Method	Description
-/users/:id	GET	Get user info
-
 Book APIs
+
 Endpoint	Method	Description
+
 /books	GET	Get all books
+
 /books/:id	GET	Get single book
+
 /books/addbook	POST	Add new book (protected)
+
 /books/mybooks	GET	Get books added by logged-in user (protected)
+
 /books/:id	PUT	Edit book (protected)
+
 /books/:id	DELETE	Delete book (protected)
 
 Review APIs
+
 Endpoint	Method	Description
+
 /review	GET	Get all reviews
+
 /review/:id	GET	Get reviews of a specific book
+
 /review/:id	POST	Add review for a book
+
 /review/:id	PUT	Edit review
+
 /review/:id	DELETE	Delete review
+
 
 🔹 Environment Variables
 Backend .env:
