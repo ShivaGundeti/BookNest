@@ -6,6 +6,8 @@ A full-stack MERN application for book enthusiasts to discover, review, and mana
 ![JWT Authentication](https://img.shields.io/badge/Auth-JWT-blue)
 ![Responsive](https://img.shields.io/badge/Design-Responsive-purple)
 
+##Live : https://book-nest-beryl-alpha.vercel.app
+
 ## ✨ Features
 
 ### 🔐 Authentication System
