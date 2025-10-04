@@ -6,21 +6,16 @@ A full-stack web application for managing books, including adding, editing, dele
 
 ## 🔹 Project Structure
 
-/project-root
-│
-├─ /backend # Express.js server, MongoDB models, APIs
-├─ /frontend # React app with Tailwind CSS, Context API for theme/auth
-└─ README.md
-
-yaml
-Copy code
+project-root
+backend # Express.js server, MongoDB models, APIs
+frontend # React app with Tailwind CSS, Context API for theme/auth
+README.md
 
 ---
 
 ## 🔹 Features
 
 - User authentication (register/login)
-- Role-based access (admin/user)
 - Add, edit, delete books
 - View and filter books by genre, year, rating
 - Search books by title/author
@@ -37,7 +32,7 @@ Copy code
 
 **Frontend:** React, Tailwind CSS, Lucide Icons, Context API  
 **Backend:** Node.js, Express.js, MongoDB (via Mongoose), JWT  
-**Tools:** Axios, Cloudinary, Postman  
+**Tools:** Axios, Postman  
 
 ---
 
@@ -66,12 +61,12 @@ npm install
 Create a .env.local in /frontend (if needed for API base URL):
 
 
-VITE_API_BASE_URL=http://localhost:6801/
+VITE_API_BASE_URL=http://localhost:5173/
 Start the frontend:
 
 
 npm start
-Open http://localhost:6801 in your browser.
+Open http://localhost:5173 in your browser.
 
 🔹 API Documentation
 Auth APIs
