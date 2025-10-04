@@ -16,17 +16,15 @@ const Navbar = () => {
 
   const userInitial = user?.Name ? user.Name.charAt(0).toUpperCase() : "U";
 
-  useEffect(() => {
-    // derive active nav item from current pathname so highlight is always correct
-    const path = location.pathname.toLowerCase();
-    if (path === "/" || path.startsWith("/")) setSelectNavItem("Home");
-    else if (path.startsWith("/mybooks")) setSelectNavItem("MyBooks");
-    
-    else setSelectNavItem("Home");
-    // close menus on route change
-    setNavOpen(false);
-    setProfileOpen(false);
-  }, [location.pathname]);
+useEffect(() => {
+  const path = location.pathname.toLowerCase();
+  if (path.includes("mybooks")) setSelectNavItem("MyBooks");
+  else setSelectNavItem("Home");
+
+  setNavOpen(false);
+  setProfileOpen(false);
+}, [location.pathname]);
+
 
   const handleProfileClick = () => setProfileOpen((prev) => !prev);
   const toggleNavMenu = () => setNavOpen((prev) => !prev);
