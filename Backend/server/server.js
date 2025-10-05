@@ -9,7 +9,7 @@ const app = express()
 dotenv.config()
 app.use(
   cors({
-    origin: ["https://book-nest-nrhbwu3rs-shivagundetis-projects.vercel.app/","https://book-nest-beryl-alpha.vercel.app/"],
+    origin: ["https://book-nest-nrhbwu3rs-shivagundetis-projects.vercel.app","https://book-nest-beryl-alpha.vercel.app"],
     methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
     allowedHeaders: ["Content-Type", "Authorization"],
   })
